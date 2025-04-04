@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: rgb(88, 93, 93);
+  width: 400px;
+  height: 550px;
+  border: 2px solid;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#screen {
+  background-color: #8c95a5;
+  margin: auto;
+  width: 90%;
+  height: 20%;
+  border: 2px solid;
+  border-radius: 2%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  margin: 2%;
+  padding: 10px;
+  height: 70%;
+  width: 90%;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.number {
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 35, 35);
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(43, 52, 52);
+}
+
+button:active {
+  background-color: rgb(56, 63, 63);
+}
+.wide-btn-1 {
+  grid-row-start: span 2;
+}
+.wide-btn-2 {
+  grid-column-start: span 2;
+}
+
+.operator-btn {
+  background-color: #b16406;
+}
+.operator-btn:hover {
+  background-color: #e58613;
+}
+.operator-btn:active {
+  background-color: #dc9641;
+}
